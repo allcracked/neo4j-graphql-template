@@ -2,7 +2,7 @@
   "name": "neo4j-graphql-template",
   "version": "1.0.0",
   "description": "A template for a neo4js and graphql project",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
