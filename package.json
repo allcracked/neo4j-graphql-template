@@ -5,9 +5,10 @@
   "main": "./src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node ./src/index.ts",
+    "build": "tsc",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "serve": "ts-node ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,8 @@
   },
   "homepage": "https://github.com/allcracked/neo4j-graphql-template#readme",
   "dependencies": {
+    "@apollo/server": "^4.7.0",
     "@neo4j/graphql": "^3.18.2",
-    "apollo-server": "^3.12.0",
     "dotenv": "^16.0.3",
     "graphql": "^16.6.0",
     "neo4j-driver": "^5.7.0"
