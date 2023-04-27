@@ -63,6 +63,8 @@ neoSchema.getSchema().then(async (schema) => {
     schema,
   });
 
-  const { url } = await startStandaloneServer(server);
-  console.log(`🚀 Server ready at ${url}`);
+  startStandaloneServer(server, {
+    context: async ({ req }) => ({ req }),
+    listen: { port: Number(process.env.APOLLO_SERVER_PORT) || 4000 },
+  }).then(({ url }) => console.log(`🚀 Server ready at ${url}`));
 });
