@@ -2,9 +2,10 @@
   "name": "neo4j-graphql-template",
   "version": "1.0.0",
   "description": "A template for a neo4js and graphql project",
-  "main": "src/index.ts",
+  "main": "./src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/allcracked/neo4j-graphql-template/issues"
   },
-  "homepage": "https://github.com/allcracked/neo4j-graphql-template#readme"
+  "homepage": "https://github.com/allcracked/neo4j-graphql-template#readme",
+  "dependencies": {
+    "@neo4j/graphql": "^3.18.2",
+    "apollo-server": "^3.12.0",
+    "graphql": "^16.6.0",
+    "neo4j-driver": "^5.7.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
 }
